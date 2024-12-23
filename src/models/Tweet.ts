@@ -63,17 +63,17 @@ export class Tweet {
     // Exibição dos likes
     if (this.likes.length > 0) {
       if (this.likes.length === 1) {
-        tweetInfo += `@${this.likes[0].username} curtiu\n`;
+        tweetInfo += `[@${this.likes[0].username} curtiu]\n`;
       } else if (this.likes.length > 1) {
         const [firstLike, ...rest] = this.likes;
-        tweetInfo += `@${firstLike.username} e mais ${rest.length} usuários curtiram\n`;
+        tweetInfo += `[@${firstLike.username} e mais ${rest.length} usuários curtiram]\n`;
       }
     }
 
     if (this.replies.length > 0) {
-      tweetInfo += `Respostas:\n`;
       this.replies.forEach((reply) => {
-        tweetInfo += `  > ${reply.show()}\n`;
+        // tweetInfo += `> @${reply.user.username}: ${reply.content}\n`;
+        tweetInfo += `> ${reply.show()}`;
       });
     }
 

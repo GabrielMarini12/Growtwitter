@@ -64,7 +64,7 @@ export class User {
   showFeed(): Tweet[] {
     const feed: Tweet[] = [];
     this.seguindo.forEach((user) => {
-      feed.push(...user._tweets); // Adiciona todos os tweets do usuário seguido
+      feed.push(...user.tweets); // Adiciona todos os tweets do usuário seguido
     });
     return feed;
   }

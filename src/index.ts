@@ -22,10 +22,22 @@ const rodrigo = new User(
 
 // Gabriel cria um tweet
 const tweet1 = gabriel.sendTweet("Olá, estou aprendendo TypeScript!");
+// Eduarda cria um tweet
+const tweet2 = eduarda.sendTweet("Amo o Internacional!");
+// Rodrigo cria um tweet
+const tweet3 = rodrigo.sendTweet("Feliz Natal a todos!");
 
-// Eduarda cria um tweet e responde ao tweet de Gabriel
-const tweet2 = eduarda.sendTweet("Eu também estou! #TypeScript");
-const replyToGabriel = tweet2.repliesTweet("Você vai amar, Gabriel!", eduarda);
+// Eduarda responde ao tweet de Gabriel
+const replyToGabriel = tweet1.repliesTweet("Você vai amar, Gabriel!", eduarda);
+
+// Gabriel responde ao tweet de Rodrigo
+const replyToRodrigo = tweet3.repliesTweet("Feliz Natal Rodrigo", gabriel);
+
+// Rodrigo responde ao tweet de Eduarda
+const replyToEduarda = tweet2.repliesTweet("Vamoo interrr", rodrigo);
+
+// Eduarda responde Rodrigo no tweet de Eduarda
+const replyToEduarda2 = tweet2.repliesTweet("Seremos campeões!!", eduarda);
 
 // Eduarda segue Gabriel
 eduarda.follow(gabriel);
@@ -33,8 +45,8 @@ eduarda.follow(gabriel);
 // Gabriel segue Eduarda
 gabriel.follow(eduarda);
 
-// Rodrigo cria um tweet
-const tweetRodrigo = rodrigo.sendTweet("TypeScript é incrível!");
+// Gabriel segue Rodrigo
+gabriel.follow(rodrigo);
 
 // Eduarda segue Rodrigo
 eduarda.follow(rodrigo);
@@ -50,6 +62,9 @@ tweet1.like(eduarda);
 
 // Rodrigo curte o tweet de Gabriel
 tweet1.like(rodrigo);
+
+// Gabriel curte o tweet de Rodrigo
+tweet3.like(gabriel);
 
 // Visualizando o feed de tweets de Gabrie (tweets dos usuários que Gabriel segue)
 console.log("Feed de Gabriel:");
