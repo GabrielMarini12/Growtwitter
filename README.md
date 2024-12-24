@@ -6,6 +6,8 @@ Projeto Growtwitter, simula o back end do Twitter
 
 - Typescript
 
+# Como inicializar o projeto
+
 # Características
 
 As principais características do projeto são:
