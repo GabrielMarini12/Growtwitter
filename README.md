@@ -42,7 +42,7 @@ mkdir src<br/><br/>
 Dentro da pasta src, crie um arquivo index.ts como ponto de entrada do seu projeto:
 console.log("Olá, mundo com TypeScript e Node.js!");<br/><br/>
 ​
-6. Instalação de ts-node-dev<br/>
+5. Instalação de ts-node-dev:<br/>
 
 npm install ts-node-dev -D<br/><br/>
 ​
