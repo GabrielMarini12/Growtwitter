@@ -14,12 +14,12 @@ Projeto Growtwitter, simula o backend do Twitter
 
 npm init -y <br/><br/>
 ​
-2. Instalação do TypeScript e tipagem do node
+2. Instalação do TypeScript e tipagem do node.
 Instale o TypeScript e as definições de tipos para Node.js:<br/>
 
 npm install typescript @types/node -D<br/><br/>
 ​
-3. Configuração do TypeScript (tsconfig.json)
+3. Configuração do TypeScript (tsconfig.json).
 Em seguida, crie o arquivo de configuração do TypeScript:<br/>
 
 npx tsc --init<br/><br/>
@@ -34,7 +34,7 @@ Isso vai gerar um arquivo tsconfig.json. Agora, você pode ajustar algumas opç�
   "exclude": ["node_modules"]
 }<br/><br/>
 ​
-4. Estrutura de pastas
+4. Estrutura de pastas.
 Crie a pasta src onde estarão seus arquivos TypeScript:<br/>
 
 mkdir src<br/><br/>
@@ -47,7 +47,7 @@ console.log("Olá, mundo com TypeScript e Node.js!");<br/><br/>
 npm install ts-node-dev -D<br/><br/>
 ​
 Para rodar o projeto diretamente com TypeScript e observar mudanças automaticamente durante o desenvolvimento, instale o ts-node-dev:
-7. Scripts no package.json
+7. Scripts no package.json.
 Para facilitar a execução dos comandos, você pode adicionar scripts no package.json. <br/><br/>
 
 "scripts": {
