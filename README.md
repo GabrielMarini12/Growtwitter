@@ -43,12 +43,12 @@ Dentro da pasta src, crie um arquivo index.ts como ponto de entrada do seu proje
 console.log("Olá, mundo com TypeScript e Node.js!");<br/><br/>
 ​
 5. Instalação de ts-node-dev:<br/>
+Para rodar o projeto diretamente com TypeScript e observar mudanças automaticamente durante o desenvolvimento, instale o ts-node-dev:<br/>
 
 npm install ts-node-dev -D<br/><br/>
 ​
-Para rodar o projeto diretamente com TypeScript e observar mudanças automaticamente durante o desenvolvimento, instale o ts-node-dev:
-7. Scripts no package.json.
-Para facilitar a execução dos comandos, você pode adicionar scripts no package.json. <br/><br/>
+6. Scripts no package.json.
+Para facilitar a execução dos comandos, você pode adicionar scripts no package.json. <br/>
 
 "scripts": {
   "build": "tsc",
