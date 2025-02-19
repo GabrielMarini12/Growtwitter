@@ -1,6 +1,6 @@
 # Growtwitter
 
-Projeto Growtwitter, simula o backend do Twitter.
+Projeto Growtwitter, simula o backend do Twitter
 
 # Tecnologia
 
